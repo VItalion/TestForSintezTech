@@ -2,18 +2,144 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>e61d350d-077a-45e8-b73e-3a090c5fe043</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Compile Remove="Migrations\20180625195418_CreatePosition.cs" />
+    <Compile Remove="Migrations\20180625195418_CreatePosition.Designer.cs" />
+    <Compile Remove="Migrations\20180628105333_ChangeSubdivision.cs" />
+    <Compile Remove="Migrations\20180628105333_ChangeSubdivision.Designer.cs" />
+    <Compile Remove="Migrations\20180628110649_ChagSubdivision.cs" />
+    <Compile Remove="Migrations\20180628110649_ChagSubdivision.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\jquery\dist\jquery.js" />
+    <None Include="wwwroot\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\jquery\dist\jquery.min.map" />
+    <None Include="wwwroot\jquery\README.md" />
+    <None Include="wwwroot\jquery\src\.jshintrc" />
+    <None Include="wwwroot\jquery\src\ajax.js" />
+    <None Include="wwwroot\jquery\src\ajax\jsonp.js" />
+    <None Include="wwwroot\jquery\src\ajax\load.js" />
+    <None Include="wwwroot\jquery\src\ajax\parseJSON.js" />
+    <None Include="wwwroot\jquery\src\ajax\parseXML.js" />
+    <None Include="wwwroot\jquery\src\ajax\script.js" />
+    <None Include="wwwroot\jquery\src\ajax\var\location.js" />
+    <None Include="wwwroot\jquery\src\ajax\var\nonce.js" />
+    <None Include="wwwroot\jquery\src\ajax\var\rquery.js" />
+    <None Include="wwwroot\jquery\src\ajax\xhr.js" />
+    <None Include="wwwroot\jquery\src\attributes.js" />
+    <None Include="wwwroot\jquery\src\attributes\attr.js" />
+    <None Include="wwwroot\jquery\src\attributes\classes.js" />
+    <None Include="wwwroot\jquery\src\attributes\prop.js" />
+    <None Include="wwwroot\jquery\src\attributes\support.js" />
+    <None Include="wwwroot\jquery\src\attributes\val.js" />
+    <None Include="wwwroot\jquery\src\callbacks.js" />
+    <None Include="wwwroot\jquery\src\core.js" />
+    <None Include="wwwroot\jquery\src\core\access.js" />
+    <None Include="wwwroot\jquery\src\core\init.js" />
+    <None Include="wwwroot\jquery\src\core\parseHTML.js" />
+    <None Include="wwwroot\jquery\src\core\ready.js" />
+    <None Include="wwwroot\jquery\src\core\support.js" />
+    <None Include="wwwroot\jquery\src\core\var\rsingleTag.js" />
+    <None Include="wwwroot\jquery\src\css.js" />
+    <None Include="wwwroot\jquery\src\css\addGetHookIf.js" />
+    <None Include="wwwroot\jquery\src\css\adjustCSS.js" />
+    <None Include="wwwroot\jquery\src\css\curCSS.js" />
+    <None Include="wwwroot\jquery\src\css\defaultDisplay.js" />
+    <None Include="wwwroot\jquery\src\css\hiddenVisibleSelectors.js" />
+    <None Include="wwwroot\jquery\src\css\showHide.js" />
+    <None Include="wwwroot\jquery\src\css\support.js" />
+    <None Include="wwwroot\jquery\src\css\var\cssExpand.js" />
+    <None Include="wwwroot\jquery\src\css\var\getStyles.js" />
+    <None Include="wwwroot\jquery\src\css\var\isHidden.js" />
+    <None Include="wwwroot\jquery\src\css\var\rmargin.js" />
+    <None Include="wwwroot\jquery\src\css\var\rnumnonpx.js" />
+    <None Include="wwwroot\jquery\src\css\var\swap.js" />
+    <None Include="wwwroot\jquery\src\data.js" />
+    <None Include="wwwroot\jquery\src\data\accepts.js" />
+    <None Include="wwwroot\jquery\src\data\Data.js" />
+    <None Include="wwwroot\jquery\src\data\support.js" />
+    <None Include="wwwroot\jquery\src\data\var\acceptData.js" />
+    <None Include="wwwroot\jquery\src\data\var\dataPriv.js" />
+    <None Include="wwwroot\jquery\src\data\var\dataUser.js" />
+    <None Include="wwwroot\jquery\src\deferred.js" />
+    <None Include="wwwroot\jquery\src\deprecated.js" />
+    <None Include="wwwroot\jquery\src\dimensions.js" />
+    <None Include="wwwroot\jquery\src\effects.js" />
+    <None Include="wwwroot\jquery\src\effects\animatedSelector.js" />
+    <None Include="wwwroot\jquery\src\effects\support.js" />
+    <None Include="wwwroot\jquery\src\effects\Tween.js" />
+    <None Include="wwwroot\jquery\src\event.js" />
+    <None Include="wwwroot\jquery\src\event\ajax.js" />
+    <None Include="wwwroot\jquery\src\event\alias.js" />
+    <None Include="wwwroot\jquery\src\event\focusin.js" />
+    <None Include="wwwroot\jquery\src\event\support.js" />
+    <None Include="wwwroot\jquery\src\event\trigger.js" />
+    <None Include="wwwroot\jquery\src\exports\amd.js" />
+    <None Include="wwwroot\jquery\src\exports\global.js" />
+    <None Include="wwwroot\jquery\src\intro.js" />
+    <None Include="wwwroot\jquery\src\jquery.js" />
+    <None Include="wwwroot\jquery\src\manipulation.js" />
+    <None Include="wwwroot\jquery\src\manipulation\buildFragment.js" />
+    <None Include="wwwroot\jquery\src\manipulation\createSafeFragment.js" />
+    <None Include="wwwroot\jquery\src\manipulation\getAll.js" />
+    <None Include="wwwroot\jquery\src\manipulation\setGlobalEval.js" />
+    <None Include="wwwroot\jquery\src\manipulation\support.js" />
+    <None Include="wwwroot\jquery\src\manipulation\var\nodeNames.js" />
+    <None Include="wwwroot\jquery\src\manipulation\var\rcheckableType.js" />
+    <None Include="wwwroot\jquery\src\manipulation\var\rleadingWhitespace.js" />
+    <None Include="wwwroot\jquery\src\manipulation\var\rscriptType.js" />
+    <None Include="wwwroot\jquery\src\manipulation\var\rtagName.js" />
+    <None Include="wwwroot\jquery\src\manipulation\wrapMap.js" />
+    <None Include="wwwroot\jquery\src\manipulation\_evalUrl.js" />
+    <None Include="wwwroot\jquery\src\offset.js" />
+    <None Include="wwwroot\jquery\src\outro.js" />
+    <None Include="wwwroot\jquery\src\queue.js" />
+    <None Include="wwwroot\jquery\src\queue\delay.js" />
+    <None Include="wwwroot\jquery\src\selector-native.js" />
+    <None Include="wwwroot\jquery\src\selector-sizzle.js" />
+    <None Include="wwwroot\jquery\src\selector.js" />
+    <None Include="wwwroot\jquery\src\serialize.js" />
+    <None Include="wwwroot\jquery\src\support.js" />
+    <None Include="wwwroot\jquery\src\traversing.js" />
+    <None Include="wwwroot\jquery\src\traversing\findFilter.js" />
+    <None Include="wwwroot\jquery\src\traversing\var\dir.js" />
+    <None Include="wwwroot\jquery\src\traversing\var\rneedsContext.js" />
+    <None Include="wwwroot\jquery\src\traversing\var\siblings.js" />
+    <None Include="wwwroot\jquery\src\var\arr.js" />
+    <None Include="wwwroot\jquery\src\var\class2type.js" />
+    <None Include="wwwroot\jquery\src\var\concat.js" />
+    <None Include="wwwroot\jquery\src\var\deletedIds.js" />
+    <None Include="wwwroot\jquery\src\var\document.js" />
+    <None Include="wwwroot\jquery\src\var\documentElement.js" />
+    <None Include="wwwroot\jquery\src\var\hasOwn.js" />
+    <None Include="wwwroot\jquery\src\var\indexOf.js" />
+    <None Include="wwwroot\jquery\src\var\pnum.js" />
+    <None Include="wwwroot\jquery\src\var\push.js" />
+    <None Include="wwwroot\jquery\src\var\rcssNum.js" />
+    <None Include="wwwroot\jquery\src\var\rnotwhite.js" />
+    <None Include="wwwroot\jquery\src\var\slice.js" />
+    <None Include="wwwroot\jquery\src\var\support.js" />
+    <None Include="wwwroot\jquery\src\var\toString.js" />
+    <None Include="wwwroot\jquery\src\wrap.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties package_1json__JSONSchema="http://json.schemastore.org/bower" /></VisualStudio></ProjectExtensions>
 
 </Project>

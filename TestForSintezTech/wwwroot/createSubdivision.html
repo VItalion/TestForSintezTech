@@ -1,0 +1,17 @@
+﻿<div ng-controller="createController" class="center-content">
+    <div class="col-lg-6">
+        <div class="page-header text-right">
+            <nav>
+                <a href="#!view">Назад</a> | <a href="/">Выйти</a>
+            </nav>
+        </div>
+        <div>
+            <form name="subdivisionForm" class="form-group form-horizontal">
+                <input type="hidden" ng-model="subdivision.Id" class="form-control"/>
+                <input type="text" ng-model="subdivision.Name" required placeholder="Название" class="form-control"/>
+                <br />
+                <input type="button" value="Создать" ng-click="createSubdivision(subdivision, subdivisionForm)" class="btn btn-default btn-group form-control" />
+            </form>
+        </div>
+    </div>
+</div>

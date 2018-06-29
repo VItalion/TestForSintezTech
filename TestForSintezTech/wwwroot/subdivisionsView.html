@@ -1,0 +1,35 @@
+﻿<div ng-controller="subdivisionController" class="center-content">
+    <div class="col-lg-6">
+        <div>
+            <div class="page-header col-md-12 text-right">
+                <nav>
+                    <a href="/">Выйти</a>
+                </nav>
+            </div>
+            <div>
+                <div>
+                    <a href="#!createSubdivision">Создать новое подразделение</a>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Подразделения</th>
+                        </tr>
+                    </thead>
+                    <tbody ng-repeat="subdivision in subdivisions">
+                        <tr>
+                            <td>
+                                <p hidden>{{subdivision.Id}}</p>
+                                <a ng-click="open(subdivision)">{{subdivision.Name}}</a>
+                            </td>
+                            <td class="system-td">
+                                <a ng-click="toEdit(subdivision.Id)" class="btn btn-default btn-group">Редактировать</a>
+                                <button ng-click="delete(subdivision)" class="btn btn-default btn-group">Удалить</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

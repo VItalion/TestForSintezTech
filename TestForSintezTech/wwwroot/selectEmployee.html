@@ -1,0 +1,32 @@
+﻿<div ng-controller="employeesController" class="center-content">
+    <div>
+        <div class="page-header text-right">
+            <nav>
+                <a href="#!view">Назад</a> | <a href="/" >Выйти</a>
+            </nav>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Отчество</th>
+                    <th>Возраст</th>
+                    <th>Пол</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="employee in employees">
+                <tr>
+                    <td>{{employee.FirstName}}</td>
+                    <td>{{employee.LastName}}</td>
+                    <td>{{employee.Patronymic}}</td>
+                    <td>{{employee.Age}}</td>
+                    <td>{{employee.Gender}}</td>
+                    <td>
+                        <button ng-click="select(employee)" class="btn btn-default btn-group">Выбрать</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+</div>

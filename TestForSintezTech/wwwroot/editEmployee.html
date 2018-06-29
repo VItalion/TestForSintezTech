@@ -1,0 +1,27 @@
+﻿<div ng-controller="editController" class="center-content">
+    <div>
+        <div class="page-header col-md-12  text-right">
+            <nav>
+                <a href="#!view">Назад</a> | <a href="/">Выйти</a>
+            </nav>
+        </div>
+        <div class="center-block col-md-12 col-md-offset-12 text-center panel-body">
+            <form method="post" class="form-group form-horizontal">
+                <input type="hidden" value="0" ng-model="employee.Id" class="form-control" />
+                <input type="text" ng-model="employee.FirstName" required placeholder="Имя" class="form-control" />
+                <br />
+                <input type="text" ng-model="employee.LastName" required placeholder="Фамилия" class="form-control" />
+                <br />
+                <input type="text" ng-model="employee.Patronymic" required placeholder="Отчество" class="form-control" />
+                <br />
+                <input type="number" ng-model="employee.Age" required placeholder="Возраст" class="form-control" />
+                <br />
+                <input type="text" ng-model="employee.Gender" required placeholder="Пол" class="form-control" />
+                <br />
+                <input type="text" ng-model="employee.Position" required placeholder="Должность" class="form-control" />
+                <br />
+                <input type="button" value="Сохранить" ng-click="editEmployee(employee)" class="btn btn-default btn-group form-control" />
+            </form>
+        </div>
+    </div>
+</div>

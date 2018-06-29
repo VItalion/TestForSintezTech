@@ -1,0 +1,29 @@
+﻿<div ng-controller="createController" >
+    <div class="center-content">
+        <div class="col-lg-6">
+            <div class="page-header text-right">
+                <nav>
+                    <a href="#!view">Назад</a> | <a href="/">Выйти</a>
+                </nav>
+            </div>
+            <div>
+                <form name="employeeForm" method="post" class="form-group form-horizontal">
+                    <input type="hidden" value="0" ng-model="employee.Id" />
+                    <input type="text" ng-model="employee.FirstName" required placeholder="Имя" class="form-control"/>
+                    <br />
+                    <input type="text" ng-model="employee.LastName" required placeholder="Фамилия" class="form-control" />
+                    <br />
+                    <input type="text" ng-model="employee.Patronymic" required placeholder="Отчество" class="form-control"/>
+                    <br />
+                    <input type="number" ng-model="employee.Age" required placeholder="Возраст" class="form-control"/>
+                    <br />
+                    <input type="text" ng-model="employee.Gender" required placeholder="Пол" class="form-control"/>
+                    <br />
+                    <input type="text" ng-model="employee.Position" required placeholder="Должность" class="form-control"/>
+                    <br />
+                    <input type="button" value="Сохранить" ng-click="createEmployee(employee, employeeForm)" class="btn btn-default btn-group form-control" />
+                </form>
+            </div>
+        </div>        
+    </div>
+</div>

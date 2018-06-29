@@ -1,0 +1,17 @@
+﻿<div ng-controller="editController" class="center-content">
+    <div>
+        <div class="page-header col-md-12  text-right">
+            <nav>
+                <a href="#!subdivision">К списку подразделений</a> | <a href="#!">Выйти</a>
+            </nav>
+        </div>
+        <div class="center-block col-md-12 col-md-offset-12 text-center panel-body">
+            <form name="subdivisionForm" class="form-group">
+                <input type="hidden" ng-model="subdivision.Id" class="form-control" />
+                <input type="text" ng-model="subdivision.Name" required placeholder="Название" class="form-control" />
+                <br />
+                <input type="button" value="Сохранить" ng-click="editSubdivision(subdivision, subdivisionForm)" class="btn btn-default btn-group form-control" />
+            </form>
+        </div>
+    </div>
+</div>

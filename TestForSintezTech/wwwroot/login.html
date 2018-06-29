@@ -1,0 +1,14 @@
+﻿<div ng-controller="authorizationController">
+    <div class="center-container">
+        <div class="col-sm-4">
+            <form name="loginForm" method="post" class="form-horizontal">
+                <input ng-model="user.Login" required placeholder="Логин" class="form-control" />
+                <br />
+                <input ng-model="user.Password" type="password" required placeholder="Пароль" class="form-control" />
+                <br />
+                <button type="button" id="sumbitButton" ng-click="login(user, loginForm)" class="btn btn-block btn-default">Вход</button>
+                <a href="#!register" class="btn btn-block btn-default">Регистрация</a>
+            </form>
+        </div>
+    </div>
+</div>

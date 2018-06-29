@@ -1,0 +1,38 @@
+﻿<div class="center-container">
+    <div>
+        <div>
+            <a href="#!createEmployee">Добавить нового сотрудника</a>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Отчество</th>
+                    <th>Возраст</th>
+                    <th>Пол</th>
+                    <th>Должность</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="employee in employees">
+                <tr>
+                    <td>{{employee.FirstName}}</td>
+                    <td>{{employee.LastName}}</td>
+                    <td>{{employee.Patronymic}}</td>
+                    <td>{{employee.Age}}</td>
+                    <td>{{employee.Gender}}</td>
+                    <td>{{employee.Position}}</td>
+                    <td>
+                        <a ng-click="toEdit(employee)" class="btn btn-default btn-group">Редактировать</a>
+                        <a ng-click="delete(employee)" class="btn btn-default btn-group">Удалить</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <a href="#!subdivision">К списку подразделений</a>
+        <br />
+        <a href="/">На главную</a>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+﻿<div ng-controller="subdivisionViewController" class="center-content">
+    <div class="col-lg-6">
+        <div>
+            <div class="page-header col-md-12  text-right">
+                <nav>
+                    <a href="#!subdivision">К списку подразделений</a> | <a href="/">Выйти</a>
+                </nav>
+            </div>
+            <div>
+                <a href="#!createSubdivision">Создать новое подразделение</a>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Подразделения</th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="subdivision in subdivisions">
+                    <tr>
+                        <td>
+                            <p hidden>{{subdivision.Id}}</p>
+                            <a ng-click="open(subdivision)">{{subdivision.Name}}</a>
+                        </td>
+                        <td class="system-td">
+                            <a ng-click="toEditSubdivision(subdivision.name)" class="btn btn-default btn-group">Редактировать</a>
+                            <button ng-click="deleteSubdivision(subdivision)" class="btn btn-default btn-group">Удалить</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <div>
+                <nav>
+                    <a href="#!createEmployee">Добавить нового сотрудника</a> |
+                    <a href="#!selectEmployee">Назначить на должность существующего сотрудника</a>
+                </nav>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Фамилия</th>
+                        <th>Отчество</th>
+                        <th>Возраст</th>
+                        <th>Пол</th>
+                        <th>Должность</th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="employee in employees">
+                    <tr>
+                        <td hidden>{{employee.Id}}</td>
+                        <td>{{employee.FirstName}}</td>
+                        <td>{{employee.LastName}}</td>
+                        <td>{{employee.Patronymic}}</td>
+                        <td>{{employee.Age}}</td>
+                        <td>{{employee.Gender}}</td>
+                        <td>{{employee.Position}}</td>
+                        <td class="system-td">
+                            <a ng-click="toEditEmployee(employee)" class="btn btn-default btn-group">Редактировать</a>
+                            <a ng-click="deleteEmployee(employee)" class="btn btn-default btn-group">Удалить</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
